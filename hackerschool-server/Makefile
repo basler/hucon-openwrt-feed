@@ -1,13 +1,13 @@
 include $(TOPDIR)/rules.mk
 PKG_NAME:=hackerschool-server
-PKG_VERSION:=1.6.0
+PKG_VERSION:=1.6.0-a13
 PKG_RELEASE:=0
 
-REPOSITORY_PATH:=basler/hucon
+REPOSITORY_PATH:=JonasTrampe/hucon
 
 PKG_SOURCE:=hucon-$(PKG_VERSION).run
 PKG_SOURCE_URL:=http://github.com/$(REPOSITORY_PATH)/releases/download/$(PKG_VERSION)/
-PKG_HASH:=044418fe1a4d9a45168d01f3d7344685e79b0adf91339e157c1e14ff9c9cb41c
+PKG_HASH:=0760c9cd80b495dacf8c0cc928ae87f374b59547559f058d3a061584c22b602b
 #PKG_SOURCE_SUBDIR:=$(PKG_NAME)
 #PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)
 
@@ -19,7 +19,7 @@ define Package/hackerschool-server
   CATEGORY:=Hackerschool
   SUBMENU:=hackerschool
   TITLE:=Hucon-Robot Webserver
-  DEPENDS:=+curl +python3-light +python3-pip +pyOnionI2C +python3-flask +python3-flask-socketio
+  DEPENDS:=+curl +python3-light +python3-pip +python3-flask +python3-flask-socketio +python3-omega-expansion +python3-onion-i2c +python3-pwm-exp
 endef
 
 
