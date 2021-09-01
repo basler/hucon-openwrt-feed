@@ -1,13 +1,13 @@
 include $(TOPDIR)/rules.mk
 PKG_NAME:=hackerschool-server
-PKG_VERSION:=1.6.0-a13
+PKG_VERSION:=2.0.0-b10
 PKG_RELEASE:=0
 
 REPOSITORY_PATH:=JonasTrampe/hucon
 
 PKG_SOURCE:=hucon-$(PKG_VERSION).run
 PKG_SOURCE_URL:=http://github.com/$(REPOSITORY_PATH)/releases/download/$(PKG_VERSION)/
-PKG_HASH:=0760c9cd80b495dacf8c0cc928ae87f374b59547559f058d3a061584c22b602b
+PKG_HASH:=33ff67e1375bd0b3d7afad8337b16ca91b9362d166ef849440c7e95edc6f760d
 #PKG_SOURCE_SUBDIR:=$(PKG_NAME)
 #PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)
 
@@ -60,6 +60,7 @@ define Package/hackerschool-server/install
 		$(PKG_BUILD_DIR)/opt/hucon/start_server.sh \
 		$(PKG_BUILD_DIR)/opt/hucon/uninstall.sh \
 		$(PKG_BUILD_DIR)/opt/hucon/update.sh \
+		$(PKG_BUILD_DIR)/opt/hucon/version_compare.sh \
 		$(1)/opt/hucon
 
 	$(PKG_BUILD_DIR)/opt/hucon/img_install.sh $(1)
