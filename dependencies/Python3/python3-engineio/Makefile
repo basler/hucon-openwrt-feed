@@ -1,11 +1,11 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=python3-engineio
-PKG_VERSION:=4.0.0
+PKG_VERSION:=3.14.2
 PKG_RELEASE:=1
 PKG_SOURCE:=python-engineio-$(PKG_VERSION).tar.gz
-PKG_SOURCE_URL:=https://files.pythonhosted.org/packages/92/e8/2dd4bd782b593adcc0bdce0675fe92016c3ffca061202142fcf1e55cbf6a/
-PKG_HASH=9f34afa4170f5ba6e3d9ff158752ccf8fbb2145f16554b2f0fc84646675be99a
+PKG_SOURCE_URL:=https://files.pythonhosted.org/packages/7d/a3/9491c16fae684011c51cc94513e17153bacfb5509c71c68dde6c5abd51fc/
+PKG_HASH=eab4553f2804c1ce97054c8b22cf0d5a9ab23128075248b97e1a5b2f29553085
 
 PKG_BUILD_DIR:=$(BUILD_DIR)/$(BUILD_VARIANT)-$(PKG_NAME)-$(PKG_VERSION)
 PKG_UNPACK=$(HOST_TAR) -C $(PKG_BUILD_DIR) --strip-components=1 -xzf $(DL_DIR)/$(PKG_SOURCE)
