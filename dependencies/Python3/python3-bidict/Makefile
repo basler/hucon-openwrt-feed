@@ -9,7 +9,7 @@ PKG_HASH=c1b1ce1c0f1e3457489672bc3a4db375a06f61ae7797a9eedf71ea788cea3870
 
 PKG_BUILD_DIR:=$(BUILD_DIR)/$(BUILD_VARIANT)-$(PKG_NAME)-$(PKG_VERSION)
 PKG_UNPACK=$(HOST_TAR) -C $(PKG_BUILD_DIR) --strip-components=1 -xzf $(DL_DIR)/$(PKG_SOURCE)
-PKG_BUILD_DEPENDS:=python python3
+PKG_BUILD_DEPENDS:=python3 python3-setuptools
 
 include $(INCLUDE_DIR)/package.mk
 include $(TOPDIR)/feeds/packages/lang/python/python3-package.mk
