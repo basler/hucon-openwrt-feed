@@ -1,11 +1,11 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=python3-bidict
-PKG_VERSION:=0.21.2
+PKG_VERSION:=0.20.0
 PKG_RELEASE:=1
 PKG_SOURCE:=bidict-$(PKG_VERSION).tar.gz
-PKG_SOURCE_URL:=https://files.pythonhosted.org/packages/bd/7c/83fbbc8568be511bc48704b97ef58f67ff2ab85ec4fcd1dad12cd2323c32/
-PKG_HASH=4fa46f7ff96dc244abfc437383d987404ae861df797e2fd5b190e233c302be09
+PKG_SOURCE_URL:=https://files.pythonhosted.org/packages/cb/fa/8d7be0a97276d9c0ea704e8c7a9f426850bbaad94671615970eda3d8d290/
+PKG_HASH=c1b1ce1c0f1e3457489672bc3a4db375a06f61ae7797a9eedf71ea788cea3870
 
 PKG_BUILD_DIR:=$(BUILD_DIR)/$(BUILD_VARIANT)-$(PKG_NAME)-$(PKG_VERSION)
 PKG_UNPACK=$(HOST_TAR) -C $(PKG_BUILD_DIR) --strip-components=1 -xzf $(DL_DIR)/$(PKG_SOURCE)
