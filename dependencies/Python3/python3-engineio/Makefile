@@ -21,7 +21,7 @@ define Package/python3-engineio
   SUBMENU:=Python
   TITLE:=python3-engineio
   URL:=https://pypi.org/project/engineio/
-  DEPENDS:=+python3 +python3-bidict
+  DEPENDS:=+python3 +python3-bidict +python3-six
   VARIANT:=python3
 endef
 
